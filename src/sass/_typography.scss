@@ -14,10 +14,23 @@
 }
 
 // font-family: 'GothamPro';
+// font-weight: 500;
+@font-face {
+  font-family: 'GothamPro';
+  font-weight: 500;
+  src: local('GothamPro'), local('GothamPro-Medium');
+  src: url('../fonts/GothamPro-Medium.eot');
+  src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamPro-Medium.woff') format('woff'),
+  url('../fonts/GothamPro-Medium.ttf') format('truetype'),
+  url('../fonts/GothamPro-Medium.svg#GothamPro-Medium') format('svg');
+}
+
+// font-family: 'GothamPro';
 // font-weight: 700;
 @font-face {
   font-family: 'GothamPro';
-  font-weight: 700;
+  font-weight: 900;
   src: local('GothamPro'), local('GothamPro-Bold');
   src: url('../fonts/GothamPro-Bold.eot');
   src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
