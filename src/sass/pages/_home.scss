@@ -50,3 +50,57 @@
     }
   }
 }
+
+//Stock
+.stock {
+  padding: 80px 0;
+
+  &__title {
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__items {
+    margin: 0 -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__item {
+    width: 33.33%;
+    margin: 0 10px;
+    padding: 30px;
+    border: 2px solid #f6f6f6;
+
+    &-title {
+      margin: 40px 0 20px;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    &-description {
+      margin-bottom: 30px;
+      font-size: 13px;
+      color: #626262;
+      text-align: center;
+    }
+
+    &-price {
+      margin-bottom: 30px;
+      display: block;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    &-btn {
+      text-align: center;
+    }
+  }
+}

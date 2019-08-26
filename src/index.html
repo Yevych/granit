@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    @@include('_include/header.html')
+@@include('_include/header.html')
 
 <section class="hero">
     <div class="page-container">
@@ -19,7 +19,7 @@
                 и других нерудных материалов <br>
                 по Москве и Московской области
             </div>
-            <a href="#" class="btn hero__btn">
+            <a href="#" class="btn btn--hero">
                 Подробнее о доставке
             </a>
             <span class="hero__catalog">или
@@ -31,7 +31,70 @@
     </div>
 </section>
 
-    @@include('_include/footer.html')
-    @@include('_include/inc_script.html')
+<section class="stock">
+    <div class="page-container">
+        <h2 class="stock__title">Всегда в наличии</h2>
+        <div class="stock__items">
+            <div class="stock__item">
+                <div class="stock__item-img">
+                    <img src="../images/stock/sand.jpg" alt="sand">
+                </div>
+                <div class="stock__item-title">
+                    Песок речной
+                </div>
+                <div class="stock__item-description">
+                    Мелкий речной песок повышает прочность, долговечность и морозоустойчивость растворов, в состав
+                    которых он входит.
+                </div>
+                <span class="stock__item-price">от 330 р./т</span>
+                <div class="stock__item-btn">
+                    <a href="#" class="btn btn--stock">
+                        Подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="stock__item">
+                <div class="stock__item-img">
+                    <img src="../images/stock/crushed-stone.jpg" alt="crushed stone">
+                </div>
+                <div class="stock__item-title">
+                    Щебень
+                </div>
+                <div class="stock__item-description">
+                    Известняковый, все фракции. Марка прочности М-400 — М-600. Цена зависит от объема и расстояния
+                    доставки.
+                </div>
+                <span class="stock__item-price">от 900 р./т</span>
+                <div class="stock__item-btn">
+                    <a href="#" class="btn btn--stock">
+                        Подробнее
+                    </a>
+                </div>
+            </div>
+            <div class="stock__item">
+                <div class="stock__item-img">
+                    <img src="../images/stock/priming.jpg" alt="priming">
+                </div>
+                <div class="stock__item-title">
+                    Грунт
+                </div>
+                <div class="stock__item-description">
+                    Обладают хорошими водно-воздушными свойствами, отличаются комковатой или зернистой структурой,
+                    содержанием в почвенном поглощающем комплексе от 70 до 90 % кальция, нейтральной или почти
+                    нейтральной реакцией, повышенным естественным плодородием.
+                </div>
+                <span class="stock__item-price">от 550 р./куб</span>
+                <div class="stock__item-btn">
+                    <a href="#" class="btn btn--stock">
+                        Подробнее
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@@include('_include/footer.html')
+@@include('_include/inc_script.html')
 </body>
 </html>
