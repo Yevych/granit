@@ -1,4 +1,44 @@
 // Footer
 .page-footer {
-	position: relative;
+  padding: 50px 0 40px;
+  position: relative;
+  background-color: $text-color;
+  color: #fff;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    img {
+      filter: brightness(10);
+    }
+  }
+
+  &__copy {
+    margin-top: 50px;
+    font-size: 12px;
+  }
+
+  &__contacts {
+    text-align: right;
+  }
+
+  &__tel {
+    a {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+
+  &__delivery {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  &__btn {
+    margin-top: 30px;
+  }
 }

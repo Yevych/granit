@@ -22,5 +22,25 @@
     padding: 12px 22px;
     background-color: #fff;
     border: 2px solid #000;
+    transition: .2s all;
+
+    &:hover {
+      background-color: $text-color;
+      color: #fff;
+      transition: .2s all;
+    }
+  }
+
+  &--footer-feedback {
+    padding: 12px 22px;
+    background-color: $text-color;
+    color: #fff;
+    border: 2px solid #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: $text-color;
+      transition: .2s all;
+    }
   }
 }
