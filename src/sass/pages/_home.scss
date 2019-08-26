@@ -1,0 +1,52 @@
+//Hero banner
+.hero {
+  padding: 170px 0 140px;
+  background-image: url('../images/hero-banner.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #000;
+    opacity: .5;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-bottom: 60px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__catalog {
+    margin-left: 15px;
+    font-size: 12px;
+
+    a {
+      color: #fff;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+}
