@@ -224,3 +224,73 @@
     }
   }
 }
+
+//Contacts
+.contacts {
+  //padding: 0;
+  position: relative;
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  &__map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  &__block {
+    width: 100%;
+    max-width: 380px;
+    margin-left: auto;
+    padding: 60px;
+    background-color: #fff;
+    position: relative;
+    font-size: 14px;
+  }
+
+  &__tel {
+    display: flex;
+
+    &-icon {
+      margin-right: 20px;
+    }
+
+    &-link {
+      a {
+        margin-bottom: 20px;
+        display: block;
+        color: $text-color;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__location {
+    margin: 20px 0 40px;
+    display: flex;
+
+    &-icon {
+      margin-right: 20px;
+    }
+  }
+
+  &__mail {
+    display: flex;
+
+    &-icon {
+      margin-right: 20px;
+    }
+
+    &-link {
+      a {
+        color: $text-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}
