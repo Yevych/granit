@@ -38,6 +38,12 @@ img {
 
 section {
   position: relative;
+  padding: 80px 0;
+  background-color: #fff;
+
+  &:nth-child(even) {
+    background-color: #f4f4f4;
+  }
 }
 
 .page-container {

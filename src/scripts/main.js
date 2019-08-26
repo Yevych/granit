@@ -14,8 +14,10 @@ $(document).ready(function() {
 
     setEqualHeight($('.stock__items'));
     setEqualHeight($('.advantage__items'));
+    setEqualHeight($('.good__items'));
     /*make blocks of the same height*/
     setEqualHeight($('.stock__item'));
     setEqualHeight($('.advantage__item'));
+    setEqualHeight($('.good__item'));
   })
 });

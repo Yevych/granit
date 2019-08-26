@@ -53,16 +53,6 @@
 
 //Stock
 .stock {
-  padding: 80px 0;
-
-  &__title {
-    margin-bottom: 60px;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
   &__items {
     margin: 0 -10px;
     display: flex;
@@ -107,17 +97,6 @@
 
 //Advantages
 .advantage {
-  padding: 80px 0;
-  background-color: #f4f4f4;
-
-  &__title {
-    margin-bottom: 60px;
-    font-size: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
   &__items {
     margin: 0 -10px;
     display: flex;
@@ -148,6 +127,75 @@
 
     &-description {
       font-size: 12px;
+    }
+  }
+}
+
+//Goods
+.good {
+  &__items {
+    margin: 0 -10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__item {
+    width: 25%;
+    margin: 0 10px;
+    padding: 20px;
+    border: 2px solid #f6f6f6;
+    text-align: center;
+
+    &-img {
+      position: relative;
+
+      img {
+        width: 180px;
+        height: 155px;
+      }
+    }
+
+    &-discount {
+      padding: 10px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #ff0000;
+      color: #fff;
+      font-size: 10px;
+      line-height: 1;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    &-title {
+      margin: 25px 0;
+      font-size: 12px;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    &-price {
+      margin-bottom: 20px;
+    }
+
+    &-default-price {
+      color: #000;
+      font-weight: 500;
+    }
+
+    &-old-price {
+      margin-right: 15px;
+      font-size: 10px;
+      color: #979797;
+      text-decoration: line-through;
+    }
+
+    &-new-price {
+      font-size: 16px;
+      font-weight: 500;
+      color: #ff0000;
     }
   }
 }
