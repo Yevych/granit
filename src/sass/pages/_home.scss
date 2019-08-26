@@ -104,3 +104,50 @@
     }
   }
 }
+
+//Advantages
+.advantage {
+  padding: 80px 0;
+  background-color: #f4f4f4;
+
+  &__title {
+    margin-bottom: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__items {
+    margin: 0 -10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__item {
+    width: 33.33%;
+    margin: 0 10px;
+    padding: 40px;
+    border: 2px solid #fff;
+    text-align: center;
+    transition: .2s all;
+
+    &:hover {
+      background-color: #fff;
+      border: 2px solid #fff;
+      box-shadow: 0 9px 21px rgba(0, 0, 0, 0.05);
+      transition: .2s all;
+    }
+
+    &-title {
+      margin: 40px 0 20px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    &-description {
+      font-size: 12px;
+    }
+  }
+}
