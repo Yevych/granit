@@ -7,7 +7,13 @@
 
   &__wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+
+    @include max-w($screen-sm) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__logo {
@@ -23,6 +29,12 @@
 
   &__contacts {
     text-align: right;
+
+    @include max-w($screen-sm) {
+      margin-bottom: 40px;
+      order: -1;
+      text-align: center;
+    }
   }
 
   &__tel {
@@ -30,6 +42,10 @@
       font-size: 18px;
       font-weight: 700;
       color: #fff;
+    }
+
+    @include max-w($screen-sm) {
+      display: none;
     }
   }
 
@@ -40,5 +56,9 @@
 
   &__btn {
     margin-top: 30px;
+
+    @include max-w($screen-sm) {
+      margin-top: 0;
+    }
   }
 }

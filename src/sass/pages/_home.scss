@@ -7,6 +7,10 @@
   background-size: cover;
   position: relative;
 
+  @include max-w($screen-sm) {
+    padding: 110px 0 80px;
+  }
+
   &:after {
     content: '';
     display: block;
@@ -31,12 +35,21 @@
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
+
+    @include max-w($screen-sm) {
+      font-size: 32px;
+    }
   }
 
   &__description {
     margin-bottom: 60px;
     font-size: 14px;
     line-height: 22px;
+
+    @include max-w($screen-sm) {
+      margin-bottom: 40px;
+      font-size: 13px;
+    }
   }
 
   &__catalog {
@@ -48,6 +61,11 @@
       font-weight: 500;
       text-decoration: underline;
     }
+
+    @include max-w($screen-sm) {
+      margin-top: 30px;
+      display: block;
+    }
   }
 }
 
@@ -56,15 +74,28 @@
   &__items {
     margin: 0 -10px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include max-w(767px) {
+      max-width: 300px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
-    width: 33.33%;
+    width: 300px;
     margin: 0 10px;
     padding: 30px;
     border: 2px solid #f6f6f6;
+    text-align: center;
+
+    @include max-w(767px) {
+      width: 100%;
+      margin: 0 auto 20px;
+    }
 
     &-title {
       margin: 40px 0 20px;
@@ -102,15 +133,26 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+
+    @include max-w(767px) {
+      max-width: 300px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
-    width: 33.33%;
+    width: 300px;
     margin: 0 10px;
     padding: 40px;
     border: 2px solid #fff;
     text-align: center;
     transition: .2s all;
+
+    @include max-w(767px) {
+      width: 100%;
+      margin: 0 auto 20px;
+    }
 
     &:hover {
       background-color: #fff;
@@ -136,18 +178,41 @@
   &__items {
     margin: 0 -10px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
+
+    @include max-w($screen-lg) {
+      max-width: 670px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+
+    @include max-w(767px) {
+      max-width: 220px;
+    }
   }
 
   &__item {
-    width: 25%;
-    margin: 0 10px;
+    width: 220px;
+    margin: 0 10px 20px;
     padding: 20px;
     border: 2px solid #f6f6f6;
     text-align: center;
 
+    @include max-w($screen-lg) {
+      width: 47%;
+      margin: 0 10px 20px;
+    }
+    @include max-w(767px) {
+      width: 100%;
+      margin: 0 auto 20px;
+    }
+
     &-img {
+      width: 100%;
+      max-width: 180px;
+      margin: 0 auto;
       position: relative;
 
       img {
@@ -205,16 +270,27 @@
   &__items {
     margin: 0 -10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
+
+    @include max-w(767px) {
+      max-width: 300px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
-    width: 33.33%;
+    width: 300px;
     margin: 0 10px;
-    padding: 40px;
+    padding: 33px;
     border: 2px solid #fff;
     text-align: center;
+
+    @include max-w(767px) {
+      width: 100%;
+      margin: 0 auto 20px;
+    }
 
     &-title {
       margin-top: 20px;
@@ -251,6 +327,10 @@
     background-color: #fff;
     position: relative;
     font-size: 14px;
+
+    @include max-w($screen-sm) {
+      padding: 40px;
+    }
   }
 
   &__tel {

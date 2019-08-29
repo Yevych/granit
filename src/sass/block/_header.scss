@@ -22,6 +22,10 @@
       font-weight: 700;
       color: $text-color;
     }
+
+    @include max-w($screen-md) {
+      display: none;
+    }
   }
 
   &__delivery {
@@ -30,21 +34,31 @@
     color: #969696;
   }
 
+  &__btn {
+    @include max-w($screen-sm) {
+      display: none;
+    }
+  }
+
   //Main nav
   .main-nav {
     position: relative;
 
-    &__list {
-      @include clearlist;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    &__wrapper {
+      height: 59px;
       background-color: #ffcc00;
       position: absolute;
       left: 0;
       right: 0;
       top: 30px;
       z-index: 3;
+    }
+
+    &__list {
+      @include clearlist;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
       li {
         display: inline-block;
@@ -54,6 +68,10 @@
           background-color: #ffbe18;
           transition: .2s all;
         }
+
+        @include max-w($screen-lg) {
+          display: block;
+        }
       }
 
       a {
@@ -62,6 +80,82 @@
         color: #000;
         font-size: 14px;
         font-weight: 500;
+
+        @include max-w($screen-lg) {
+          display: inline-block;
+        }
+      }
+
+      @include max-w($screen-lg) {
+        display: none;
+        position: absolute;
+        background-color: #ffcc00;
+        top: 100%;
+        right: 0;
+        left: 0;
+        text-align: center;
+      }
+    }
+
+    //Humburger
+    .hamburger {
+      display: none;
+      width: 30px;
+      height: 20px;
+      //position: relative;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      padding: 0;
+      position: absolute;
+      right: 15px;
+      top: 48px;
+      z-index: 3;
+
+      @include max-w($screen-lg) {
+        display: block;
+      }
+
+      &__item {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 2px;
+        background-color: #000;
+        transition: 500ms;
+
+        &:nth-child(2) {
+          top: 50%;
+          margin-top: -1px;
+        }
+
+        &:last-child {
+          top: auto;
+          bottom: 0;
+        }
+      }
+
+      &.open-burger {
+        .hamburger__item {
+          &:first-of-type {
+            top: 40%;
+            transform: rotate(45deg);
+          }
+
+          &:nth-child(2) {
+            transform: translateX(-100%);
+            opacity: 0;
+            visibility: hidden;
+          }
+
+          &:last-child {
+            bottom: 50%;
+            transform: rotate(-45deg);
+          }
+        }
+
       }
     }
   }
