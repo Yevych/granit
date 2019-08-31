@@ -75,8 +75,6 @@
     margin: 0 -10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
 
     @include max-w(767px) {
       max-width: 300px;
@@ -87,7 +85,7 @@
 
   &__item {
     width: 300px;
-    margin: 0 10px;
+    margin: 0 10px 20px;
     padding: 30px;
     border: 2px solid #f6f6f6;
     text-align: center;
@@ -131,8 +129,7 @@
   &__items {
     margin: 0 -10px;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: row;
 
     @include max-w(767px) {
       max-width: 300px;
@@ -179,8 +176,6 @@
     margin: 0 -10px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
 
     @include max-w($screen-lg) {
       max-width: 670px;
@@ -270,8 +265,7 @@
   &__items {
     margin: 0 -10px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: row;
 
     @include max-w(767px) {
       max-width: 300px;
@@ -283,7 +277,7 @@
   &__item {
     width: 300px;
     margin: 0 10px;
-    padding: 33px;
+    padding: 40px;
     border: 2px solid #fff;
     text-align: center;
 
@@ -303,7 +297,6 @@
 
 //Contacts
 .contacts {
-  //padding: 0;
   position: relative;
 
   &__title {
